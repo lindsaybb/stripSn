@@ -1,20 +1,18 @@
 # stripSn
-Utility program for stripping Serial Number from ONU Blacklist. Includes file or terminal i/o options.
 
-`stripSn` [options]
-  -a    Append entries to file if exists (default true)
-  -h    Show this help
-  -i string
-        File to read blacklist entries from (default "blackList.txt")
-  -o string
-        File to write new serial numbers to (default "authList.txt")
-  -stdin
-        Read blacklist entries from stdin
-  -stdout
-        Write serial numbers to stdout
+stripSn is an Iskratel PON utility program for stripping Serial Numbers from the ONU Blacklist table in CLI.
 
+| Flag | Description |
+| ------ | ------ |
+| -h | Show this help |
+| -i | File to read blacklist entries from (default "blackList.txt") |
+| -o | File to write new serial numbers to (default "authList.txt") |
+| -a | Append entries to file if exists (default true) |
+| -stdin | Read blacklist entries from stdin |
+| -stdout | Write serial numbers to stdout |
 
-Example Input (LindsayBB#show onu black-list):
+# Example Input
+```sh
 Interface  Serial Number     Password              Cause 
 ---------  ----------------  --------------------  -----------------------
 0/1        ISKT019ECFFA                            Serial Number not known
@@ -31,10 +29,11 @@ Interface  Serial Number     Password              Cause
 0/4        ISKT019ECF14                            Serial Number not known
 0/4        ISKT019ECEAC                            Serial Number not known
 0/4        ISKT019ECEE8                            Serial Number not known
----------------------------
-Total: 14
+ ---------------------------
+```
 
-Example Output:
+# Example Output
+```sh
 ISKT019ECFFA
 ISKT019ECE6C
 ISKT019ECE4A
@@ -49,5 +48,4 @@ ISKT019ED03A
 ISKT019ECF14
 ISKT019ECEAC
 ISKT019ECEE8
-
-
+```
