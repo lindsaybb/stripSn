@@ -8,8 +8,8 @@ stripSn is an Iskratel PON utility program for stripping Serial Numbers from the
 | -i | File to read blacklist entries from (default "blackList.txt") |
 | -o | File to write new serial numbers to (default "authList.txt") |
 | -a | Overwrite entries if file exists (default false) |
-| -stdin | Read blacklist entries from stdin |
-| -stdout | Write serial numbers to stdout |
+| -si| Read blacklist entries from stdin |
+| -so | Write serial numbers to stdout |
 
 # Example Input
 ```sh
