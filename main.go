@@ -13,8 +13,8 @@ import (
 var (
 	helpFlag = flag.Bool("h", false, "Show this help")
 	inFile = flag.String("i", "blackList.txt", "File to read blacklist entries from")
-	stdinFlag = flag.Bool("stdin", false, "Read blacklist entries from stdin")
-	stdoutFlag = flag.Bool("stdout", false, "Write serial numbers to stdout")
+	stdinFlag = flag.Bool("si", false, "Read blacklist entries from stdin")
+	stdoutFlag = flag.Bool("so", false, "Write serial numbers to stdout")
 	outFile = flag.String("o", "authList.txt", "File to write new serial numbers to")
 	appendFlag = flag.Bool("a", false, "Overwrite entries if file exists")
 	err error
